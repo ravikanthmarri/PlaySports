@@ -49,11 +49,6 @@ class DetailViewController: UIViewController {
                 }
             }
         }
-        apiClient.getComments(for: videoId) { [weak self] comments, error in
-            if let err = error {
-                print(err)
-            }
-        }
     }
     
     func updateUI(with videoDetail: ItemDetail){
