@@ -50,7 +50,6 @@ class DetailViewController: UIViewController {
             }
         }
         apiClient.getComments(for: videoId) { [weak self] comments, error in
-            guard let strongSelf = self else { return }
             if let err = error {
                 print(err)
             }

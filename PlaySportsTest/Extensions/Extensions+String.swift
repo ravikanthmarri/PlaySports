@@ -37,10 +37,10 @@ extension String{
             
             
             if (timeUnit == "H") {
-                hours = Int(part as! String)!
+                hours = Int(part! as String)!
             }
             else if (timeUnit == "M") {
-                minutes = Int(part as! String)!
+                minutes = Int(part! as String)!
             }
             else if (timeUnit == "S") {
                 seconds   = Int(part! as String)!
